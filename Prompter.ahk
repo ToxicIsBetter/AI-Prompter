@@ -1,4 +1,4 @@
-; AutoHotkey script to type a prompt into 4 Chrome tabs and press Enter
+; AutoHotkey script to type a prompt into 5 Brave tabs and press Enter
 
 ; Prompt the user for input
 InputBox, userInput, Enter Prompt, Type the text you want to search:
@@ -11,11 +11,11 @@ if (userInput = "")
 }
 
 ; Activate Chrome window
-WinActivate, ahk_exe chrome.exe
-WinWaitActive, ahk_exe chrome.exe
+WinActivate, ahk_exe brave.exe
+WinWaitActive, ahk_exe brave.exe
 
-; Loop through 4 tabs
-Loop, 4
+; Loop through 5 tabs
+Loop, 5
 {
     ; Send the user's input to the active tab
     Send, %userInput%
@@ -30,5 +30,5 @@ Loop, 4
     Sleep, 100 ; Small delay to ensure the tab switch
 }
 
-MsgBox, Done! The prompt has been sent to 4 Chrome tabs.
+MsgBox, Done! The prompt has been sent to 5 Brave tabs.
 ExitApp
