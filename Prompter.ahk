@@ -11,12 +11,12 @@ if (userInput = "")
 }
 
 ; Activate Brave Browser window
-if !WinActivate("ahk_exe brave.exe")
+if !WinActivate("ChatGPT - Brave")
 {
     MsgBox("Brave Browser is not open. Please open Brave and try again.")
     ExitApp
 }
-WinWaitActive("ahk_exe brave.exe")
+WinWaitActive("ChatGPT - Brave")
 
 ; Loop through 4 tabs
 Loop 4
